@@ -60,6 +60,7 @@ def answer_question(df, question):
     st.write(
     "Has environment variables been set:",
     os.environ["ANTHROPIC_API_KEY"] == st.secrets["anthropic"])
+    os.environ["ANTHROPIC_API_KEY"] = st.secrets["anthropic"]
     client = Anthropic()
     MODEL_NAME = "claude-3-5-sonnet-20240620"
     glasses_df = load_data()
