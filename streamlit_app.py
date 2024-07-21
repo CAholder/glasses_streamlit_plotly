@@ -57,7 +57,6 @@ def create_sorted_bar_chart_brand_type(data, sort_by, title):
 
 def answer_question(df, question):
     question = question.lower()
-
     MODEL_NAME = "claude-3-5-sonnet-20240620"
     glasses_df = load_data()
     csv_content = glasses_df.to_string(index=False)
