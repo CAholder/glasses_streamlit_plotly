@@ -57,8 +57,7 @@ def create_sorted_bar_chart_brand_type(data, sort_by, title):
 
 def answer_question(df, question):
     question = question.lower()
-    os.environ[
-        "ANTHROPIC_API_KEY"] = "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"
+    os.environ["ANTHROPIC_API_KEY"] = os.environ['LLM_KEY']
     client = Anthropic()
     MODEL_NAME = "claude-3-5-sonnet-20240620"
     glasses_df = load_data()
